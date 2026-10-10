@@ -78,11 +78,11 @@
   .center .eyebrow::after{content:''; width:26px; height:1.5px; background:var(--euca)}
 
   /* MAPA */
-  .map{background:var(--white); border-radius:28px; padding:26px 18px 22px; margin-top:34px; border:1px solid var(--line); box-shadow:var(--shadow)}
-  .map svg{width:100%; max-width:560px; height:auto; display:block; margin:0 auto}
-  .legend{display:grid; gap:10px; margin:22px auto 0; max-width:760px}
+  .map{background:#F0E8DB; border-radius:28px; padding:26px 18px 22px; margin-top:34px; border:1px solid var(--line); box-shadow:var(--shadow)}
+  .map img.feet{width:100%; max-width:440px; height:auto; display:block; margin:0 auto}
+  .legend{display:grid; gap:10px; margin:22px auto 0; max-width:760px; background:rgba(255,255,255,.55); border-radius:18px; padding:16px 18px}
   .legend div{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--ink)}
-  .legend i{flex-shrink:0; width:26px; height:26px; border-radius:50%; display:grid; place-items:center; font-style:normal; font-weight:700; font-size:13px; color:var(--deep); border:1.5px solid rgba(47,93,82,.35)}
+  .legend i{flex-shrink:0; width:16px; height:16px; margin-top:4px; border-radius:50%; display:grid; place-items:center; font-style:normal; font-weight:700; font-size:13px; color:var(--deep); border:1.5px solid rgba(47,93,82,.35)}
   .legend b{color:var(--deep)}
   .map .note{font-size:12.5px; color:var(--muted); text-align:center; margin-top:16px}
 
@@ -199,67 +199,17 @@
       <p>Es una terapia manual que trabaja los puntos reflejos de los pies. Cada zona se relaciona con una parte del cuerpo. Al estimularlas con presión precisa, buscamos liberar tensión, recuperar el equilibrio y darle a tu cuerpo un espacio para sentirse mejor.</p>
     </div>
     <div class="map">
-      <svg viewBox="66 26 388 408" role="img" aria-label="Mapa de reflexología podal: zonas de los pies y su relación con el cuerpo" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <path id="sole" d="M150 395 C110 395 98 360 100 320 C102 285 112 265 110 235 C107 200 85 180 88 140 C91 105 120 92 155 92 C192 92 214 108 212 140 C210 175 196 205 196 240 C196 275 204 300 202 330 C200 370 186 395 150 395 Z"/>
-    <clipPath id="clipSole"><use href="#sole"/></clipPath>
-    <g id="foot">
-      <g fill="#F4C9CF" stroke="#2F5D52" stroke-width="2" stroke-opacity=".35">
-        <ellipse cx="190" cy="66" rx="23" ry="29"/>
-        <ellipse cx="156" cy="58" rx="14" ry="18"/>
-        <ellipse cx="129" cy="63" rx="12.5" ry="16"/>
-        <ellipse cx="107" cy="74" rx="11" ry="14"/>
-        <ellipse cx="91" cy="91" rx="9.5" ry="12"/>
-      </g>
-      <g clip-path="url(#clipSole)">
-        <rect x="60" y="80" width="180" height="72" fill="#F6D6BF"/>
-        <rect x="60" y="152" width="180" height="62" fill="#F3E3A8"/>
-        <rect x="60" y="214" width="180" height="82" fill="#D3E6CC"/>
-        <rect x="60" y="296" width="180" height="110" fill="#CADDEC"/>
-        <g stroke="#FFFFFF" stroke-width="2.5" opacity=".9"><path d="M60 152h180M60 214h180M60 296h180"/></g>
-        <path d="M201 104 C205 140 195 176 191 206 C187 241 193 276 195 320 C196 350 191 376 183 390" fill="none" stroke="#B9A6DB" stroke-width="9" stroke-linecap="round"/>
-      </g>
-      <use href="#sole" fill="none" stroke="#2F5D52" stroke-width="2.5" stroke-opacity=".45"/>
-    </g>
-  </defs>
-
-  <use href="#foot"/>
-  <use href="#foot" transform="translate(520 0) scale(-1 1)"/>
-
-  <!-- íconos de órganos, pie derecho -->
-  <g fill="none" stroke="#2F5D52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
-    <circle cx="330" cy="62" r="8"/><path d="M326 74c2 3 6 3 8 0"/>
-    <path d="M370 102v12M362 108c-10 4-14 20-10 28 4 4 10 2 10-6ZM378 108c10 4 14 20 10 28-4 4-10 2-10-6Z"/>
-    <path d="M380 168c-2 10-14 8-18 16-4 9 6 14 14 9 8-5 10-14 6-25"/>
-    <path d="M352 238h36M388 238c6 0 6 10 0 10h-36c-6 0-6 10 0 10h36"/>
-    <path d="M354 330c6 18 26 18 32 0M360 348c4 9 16 9 20 0"/>
-  </g>
-
-  <!-- números, pie izquierdo -->
-  <g font-family="Manrope, sans-serif" font-weight="700" font-size="15" text-anchor="middle" fill="#2F5D52">
-    <g><circle cx="190" cy="66" r="13" fill="#fff"/><text x="190" y="71">1</text></g>
-    <g><circle cx="148" cy="122" r="13" fill="#fff"/><text x="148" y="127">2</text></g>
-    <g><circle cx="146" cy="184" r="13" fill="#fff"/><text x="146" y="189">3</text></g>
-    <g><circle cx="146" cy="256" r="13" fill="#fff"/><text x="146" y="261">4</text></g>
-    <g><circle cx="150" cy="346" r="13" fill="#fff"/><text x="150" y="351">5</text></g>
-    <g><circle cx="216" cy="250" r="13" fill="#fff" stroke="#B9A6DB" stroke-width="2"/><text x="216" y="255">6</text></g>
-  </g>
-
-  <g font-family="Manrope, sans-serif" font-size="13" font-weight="600" fill="#5F6E69" text-anchor="middle" letter-spacing="2">
-    <text x="150" y="424">IZQUIERDO</text>
-    <text x="370" y="424">DERECHO</text>
-  </g>
-</svg>
-
+      <img class="feet" src="pies.jpg" alt="Mapa de reflexología podal con las zonas de cada pie">
       <div class="legend">
-        <div><i style="background:#F4C9CF">1</i><span><b>Dedos</b> · cabeza, cuello y senos paranasales</span></div>
-        <div><i style="background:#F6D6BF">2</i><span><b>Base de los dedos</b> · pecho, pulmones y hombros</span></div>
-        <div><i style="background:#F3E3A8">3</i><span><b>Arco alto</b> · estómago y digestión</span></div>
-        <div><i style="background:#D3E6CC">4</i><span><b>Arco bajo</b> · intestinos</span></div>
-        <div><i style="background:#CADDEC">5</i><span><b>Talón</b> · pelvis, ciático y espalda baja</span></div>
-        <div><i style="background:#E4DAF3">6</i><span><b>Borde interno</b> · toda la columna vertebral</span></div>
+        <div><i style="background:#EBA79C"></i><span><b>Dedos</b> · cabeza y sistema nervioso</span></div>
+        <div><i style="background:#9DBFE0"></i><span><b>Planta alta</b> · sistema respiratorio</span></div>
+        <div><i style="background:#F0A9A0"></i><span><b>Zona interna alta</b> · corazón</span></div>
+        <div><i style="background:#A9C08C"></i><span><b>Centro del pie</b> · sistema digestivo</span></div>
+        <div><i style="background:#F2CF7A"></i><span><b>Lado derecho</b> · hígado y vesícula</span></div>
+        <div><i style="background:#7FBDB8"></i><span><b>Arco</b> · riñones</span></div>
+        <div><i style="background:#C9AFD6"></i><span><b>Talón</b> · sistema reproductor y pelvis</span></div>
       </div>
-      <p class="note">Ilustración simplificada de las zonas de reflexología podal.</p>
+      <p class="note">Mapa simplificado de las zonas de reflexología podal.</p>
     </div>
   </div>
 </section>
