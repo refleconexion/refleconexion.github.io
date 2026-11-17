@@ -6,12 +6,12 @@
 <meta name="color-scheme" content="light">
 <link rel="icon" href="logo.png">
 <meta name="theme-color" content="#2F5D52">
-<title>Naxe Drala · Reflexología Medellín</title>
-<meta name="description" content="Reflexología terapéutica en Medellín con Alexandra Garzón: acompañamiento para dolores crónicos, tensión, estrés e insomnio. Agenda tu sesión por WhatsApp.">
+<title>Naxe Drala · Masajes y Reflexología Medellín</title>
+<meta name="description" content="Masaje terapéutico, masaje de relajación y reflexología en Medellín con Alexandra Garzón: acompañamiento para dolores, tensión muscular, estrés e insomnio. Agenda tu sesión por WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://refleconexion.github.io">
-<meta property="og:title" content="Naxe Drala · Reflexología Medellín">
-<meta property="og:description" content="Acompañamiento para dolores crónicos, tensión, estrés e insomnio. 20% en tu primera sesión si me conociste en Cygnus.">
+<meta property="og:title" content="Naxe Drala · Masajes y Reflexología Medellín">
+<meta property="og:description" content="Masaje terapéutico, masaje de relajación y reflexología.">
 <meta property="og:image" content="https://refleconexion.github.io/tarjeta.png">
 <meta property="og:locale" content="es_CO">
 <meta name="twitter:card" content="summary_large_image">
@@ -76,6 +76,46 @@
   .head p{margin-top:14px; font-size:17.5px; color:var(--muted)}
   .center{text-align:center; margin-left:auto; margin-right:auto}
   .center .eyebrow::after{content:''; width:26px; height:1.5px; background:var(--euca)}
+
+  /* SERVICIOS */
+  .services{display:grid; gap:16px; margin-top:34px}
+  .svc{background:var(--white); border:1px solid var(--line); border-radius:24px; padding:26px 22px; display:flex; flex-direction:column; box-shadow:0 10px 30px -22px rgba(47,93,82,.35)}
+  .svc .num{font-family:'Cormorant Garamond'; font-style:italic; font-size:20px; color:var(--lilac)}
+  .svc h3{font-size:29px; margin-top:4px}
+  .svc .price{font-family:'Cormorant Garamond',Georgia,serif; font-weight:600; font-size:30px; color:var(--deep); margin-top:6px; line-height:1}
+  .svc .price small{font-family:'Manrope',sans-serif; font-size:13px; font-weight:500; color:var(--muted)}
+  .svc.feat .price{color:#fff}
+  .svc.feat .price small{color:#BFD8CC}
+  .svc p{font-size:15px; color:var(--muted); margin-top:10px}
+  .svc ul{list-style:none; padding:0; margin:14px 0 0; display:grid; gap:6px}
+  .svc li{font-size:14px; color:var(--ink); padding-left:18px; position:relative}
+  .svc li::before{content:''; position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:50%; background:var(--euca)}
+  .svc .go{margin-top:auto; padding-top:20px}
+  .svc .go a{display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:14.5px; color:var(--deep); text-decoration:none; border-bottom:1.5px solid var(--euca); padding-bottom:2px}
+  .svc .go a svg{width:17px; height:17px; color:var(--wa)}
+  .svc.feat{background:var(--deep); border-color:var(--deep)}
+  .svc.feat h3{color:#fff}
+  .svc.feat .num{color:#C9B8E6}
+  .svc.feat p{color:#D3E2DB}
+  .svc.feat li{color:#E8F0EC}
+  .svc.feat li::before{background:#BFD8CC}
+  .svc.feat .go a{color:#fff; border-color:#BFD8CC}
+
+  /* GLOSARIO */
+  .explain{background:var(--sand)}
+  .glos{display:grid; gap:14px; margin-top:34px}
+  .g{background:var(--white); border:1px solid var(--line); border-radius:22px; padding:22px 20px}
+  .g .tag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#6E5A99; background:var(--lilac-soft); border-radius:999px; padding:4px 10px}
+  .g h3{font-size:26px; margin-top:10px}
+  .g p{font-size:15px; color:var(--muted); margin-top:8px; line-height:1.6}
+  .g p b{color:var(--ink); font-weight:600}
+  .g.star{background:var(--deep); border-color:var(--deep)}
+  .g.star h3{color:#fff}
+  .g.star p{color:#D3E2DB}
+  .g.star p b{color:#fff}
+  .g.star h4{font-family:'Cormorant Garamond',Georgia,serif; font-weight:600; font-style:italic; font-size:21px; color:#C9B8E6; margin:16px 0 0}
+  .g.star .tag{background:#C9B8E6; color:#2E2150}
+  .g a{display:inline-block; margin-top:10px; font-weight:600; font-size:14.5px; color:var(--deep); text-decoration:none; border-bottom:1.5px solid var(--euca)}
 
   /* MAPA */
   .map{background:#F0E8DB; border-radius:28px; padding:26px 18px 22px; margin-top:34px; border:1px solid var(--line); box-shadow:var(--shadow)}
@@ -147,6 +187,9 @@
     .trust{grid-template-columns:repeat(3,1fr)}
     .legend{grid-template-columns:1fr 1fr 1fr}
     .cards{grid-template-columns:repeat(4,1fr)}
+    .services{grid-template-columns:repeat(3,1fr)}
+    .glos{grid-template-columns:repeat(3,1fr)}
+    .g.star{grid-column:1/-1; padding:30px 34px}
     .process,.about-grid{grid-template-columns:1fr 1fr}
   }
 </style>
@@ -159,8 +202,8 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#"><img src="logo.png" alt=""><span><b>Naxe Drala</b><small>Reflexología · Medellín</small></span></a>
-    <a class="btn btn-wa" href="https://wa.me/573001005247?text=Hola%2C%20te%20conoc%C3%AD%20en%20la%20inauguraci%C3%B3n%20de%20Cygnus%20y%20quiero%20agendar%20mi%20primera%20sesi%C3%B3n%20de%20reflexolog%C3%ADa%20con%20el%2020%25%20de%20descuento." target="_blank" rel="noopener">Agendar</a>
+    <a class="logo" href="#"><img src="logo.png" alt=""><span><b>Naxe Drala</b><small>Masajes · Reflexología</small></span></a>
+    <a class="btn btn-wa" href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n." target="_blank" rel="noopener">Agendar</a>
   </div>
 </nav>
 
@@ -168,30 +211,113 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">Reflexología terapéutica</span>
-        <h1>Alivia tu cuerpo <em>desde tus pies</em></h1>
-        <p class="lead">Acompañamiento terapéutico para dolores crónicos, tensión muscular, estrés e insomnio. Presión precisa en los puntos reflejos, en un espacio tranquilo y a tu ritmo.</p>
+        <span class="eyebrow">Masajes y reflexología</span>
+        <h1>Un espacio para que tu cuerpo <em>suelte</em></h1>
+        <p class="lead">Masaje terapéutico, masaje de relajación y reflexología. Acompañamiento para dolores, tensión muscular, estrés e insomnio, en un espacio tranquilo y a tu ritmo.</p>
         <div class="ctas">
-          <a class="btn btn-wa" href="https://wa.me/573001005247?text=Hola%2C%20te%20conoc%C3%AD%20en%20la%20inauguraci%C3%B3n%20de%20Cygnus%20y%20quiero%20agendar%20mi%20primera%20sesi%C3%B3n%20de%20reflexolog%C3%ADa%20con%20el%2020%25%20de%20descuento." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agenda tu sesión</a>
-          <a class="btn btn-soft" href="contacto.vcf" download>Guardar contacto</a>
+          <a class="btn btn-wa" href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agenda tu sesión</a>
+          <a class="btn btn-soft" href="#servicios">Ver servicios</a>
         </div>
-        <p class="who">Con <strong>Alexandra Garzón</strong>, reflexóloga en Medellín.</p>
+        <p class="who">Con <strong>Alexandra Garzón</strong>, masajes y reflexología en Medellín.</p>
       </div>
       <div class="photo">
-        <div class="arch"><img src="foto.jpg" alt="Alexandra Garzón, reflexóloga"></div>
+        <div class="arch"><img src="foto.jpg" alt="Alexandra Garzón, masajes y reflexología"></div>
         <div class="ring"><img src="logo.png" alt=""></div>
-        <div class="badge"><b>20%</b><span>en tu primera sesión si me conociste en la inauguración de Cygnus</span></div>
+        <div class="badge"><b>+</b><span>Sanación reconectiva incluida en el masaje terapéutico</span></div>
       </div>
     </div>
     <div class="trust">
       <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-7-4.4-7-10.2A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7 2.8C19 16.6 12 21 12 21Z"/></svg>Terapia complementaria a tu tratamiento</div>
       <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="4" width="16" height="16" rx="4"/></svg>Plan de sesiones según tu caso</div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s6-5.3 6-11a6 6 0 0 0-12 0c0 5.7 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>Atención en Medellín</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s6-5.3 6-11a6 6 0 0 0-12 0c0 5.7 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>Consultorio en Belén Malibú y a domicilio</div>
     </div>
   </div>
 </header>
 
-<section>
+<section id="servicios">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow">Servicios</span>
+      <h2>Elige lo que tu cuerpo <em>necesita hoy</em></h2>
+      <p>Cada sesión empieza escuchándote. Si no sabes cuál elegir, escríbeme y lo definimos juntas.</p>
+    </div>
+    <div class="services">
+      <article class="svc feat">
+        <span class="num">01</span>
+        <h3>Masaje terapéutico</h3>
+        <div class="price">$150.000 <small>por sesión</small></div>
+        <p>Trabajo en todas las zonas del cuerpo, o focalizado en la zona que te duele, según tu dolencia.</p>
+        <ul><li>Cuerpo completo o una zona específica</li><li>Piedras volcánicas y aromaterapia</li><li><strong style="color:#fff">+ Sanación reconectiva incluida</strong></li><li>Tensión muscular y contracturas</li></ul>
+        <div class="go" style="padding-top:14px"><a href="#explicacion" style="border-color:#C9B8E6">¿Qué es todo esto? Te lo explico ↓</a></div>
+        <div class="go"><a href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20de%20masaje%20terap%C3%A9utico." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar masaje terapéutico</a></div>
+      </article>
+      <article class="svc">
+        <span class="num">02</span>
+        <h3>Masaje de relajación</h3>
+        <div class="price">$120.000 <small>por sesión</small></div>
+        <p>Un masaje suave y envolvente para bajar el ritmo, soltar el estrés y descansar de verdad.</p>
+        <ul><li>Estrés y cansancio acumulado</li><li>Sueño más profundo</li><li>Una pausa solo para ti</li></ul>
+        <div class="go"><a href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20de%20masaje%20de%20relajaci%C3%B3n." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar masaje de relajación</a></div>
+      </article>
+      <article class="svc">
+        <span class="num">03</span>
+        <h3>Reflexología</h3>
+        <div class="price">$100.000 <small>por sesión</small></div>
+        <p>Presión precisa en los puntos reflejos de los pies, que se relacionan con cada parte del cuerpo.</p>
+        <ul><li>Dolores que vuelven una y otra vez</li><li>Estrés, insomnio y digestión</li><li>Equilibrio general del cuerpo</li></ul>
+        <div class="go"><a href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20de%20reflexolog%C3%ADa." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar reflexología</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="explain" id="explicacion">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow">Te lo explico</span>
+      <h2>¿Qué es <em>cada cosa</em>?</h2>
+      <p>Si nunca te has hecho un masaje o una terapia así, aquí te cuento en palabras sencillas qué vas a vivir en tu sesión.</p>
+    </div>
+    <div class="glos">
+      <div class="g">
+        <span class="tag">Servicio</span>
+        <h3>Masaje terapéutico</h3>
+        <p>Es un masaje con presión firme sobre los músculos que están tensos o adoloridos. Se puede hacer en todo el cuerpo o solo en la zona que te molesta, como la espalda, el cuello o las piernas, y <b>busca soltar los nudos y contracturas</b> para que te muevas con más comodidad.</p>
+        <p><b>Lo que lo hace distinto:</b> no es solo un masaje. En la misma sesión se unen cuatro cosas: el trabajo de las manos sobre el músculo, el calor de las piedras volcánicas, la aromaterapia y la sanación reconectiva. Trabajamos el cuerpo y también la energía.</p>
+      </div>
+      <div class="g">
+        <span class="tag">Servicio</span>
+        <h3>Masaje de relajación</h3>
+        <p>Es un masaje con movimientos suaves, lentos y continuos. No se enfoca en un dolor puntual: <b>su objetivo es que descanses</b>. La respiración se calma, el cuerpo se afloja y sales más liviana.</p>
+      </div>
+      <div class="g">
+        <span class="tag">Servicio</span>
+        <h3>Reflexología</h3>
+        <p>Es una terapia que se hace en los pies. Cada zona del pie se relaciona con una parte del cuerpo, y con presión en esos puntos <b>se busca equilibrar y relajar el cuerpo completo</b>. No necesitas desvestirte: solo te quitas los zapatos.</p>
+        <a href="#mapa">Ver el mapa de los pies ↓</a>
+      </div>
+      <div class="g">
+        <span class="tag">Incluido en el masaje terapéutico</span>
+        <h3>Piedras volcánicas</h3>
+        <p>Son piedras lisas de origen volcánico que se calientan y se ponen sobre el cuerpo o se usan para masajear. <b>El calor ayuda a que el músculo se relaje</b> más rápido y la sesión se siente más profunda.</p>
+      </div>
+      <div class="g">
+        <span class="tag">Incluido en el masaje terapéutico</span>
+        <h3>Aromaterapia</h3>
+        <p>Es el uso de aceites esenciales, que son extractos naturales de plantas, durante el masaje. <b>Su aroma ayuda a crear un ambiente de calma</b> y acompaña la relajación.</p>
+      </div>
+      <div class="g star">
+        <span class="tag">El valor agregado</span>
+        <h3>Sanación reconectiva</h3>
+        <p>Es una terapia energética creada por Eric Pearl en Estados Unidos en los años 90. Parte de una idea sencilla: <b>tu cuerpo tiene su propia capacidad de buscar el equilibrio</b>. La terapeuta no te manipula ni te presiona: trabaja con las manos cerca de tu cuerpo, sin tocarte, para acompañar ese proceso.</p>
+        <h4>¿Por qué la incluimos?</h4>
+        <p>Porque el dolor y la tensión no son solo físicos: el estrés y las emociones también se quedan en el cuerpo. Con las manos trabajamos el músculo, y con la sanación reconectiva acompañamos el equilibrio de todo tu ser. <b>Por eso este no es un masaje común.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mapa">
   <div class="wrap">
     <div class="head center">
       <span class="eyebrow">¿Qué es la reflexología?</span>
@@ -219,7 +345,7 @@
     <div class="head">
       <span class="eyebrow">Más que relajación</span>
       <h2>Lo que podemos <em>trabajar juntas</em></h2>
-      <p>La reflexología acompaña esos dolores y malestares que se quedan contigo por semanas, meses o años.</p>
+      <p>Con masaje terapéutico y reflexología acompañamos esos dolores y malestares que se quedan contigo por semanas, meses o años.</p>
     </div>
     <div class="cards">
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 3v18M9 6h6M8.5 10h7M9 14h6M9.5 18h5"/></svg></div><h3>Dolor de espalda</h3><p>Lumbar, dorsal y la carga que se acumula en la columna.</p></div>
@@ -231,7 +357,7 @@
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M8 4c0 3 4 3 4 6s-5 2-5 6 3 4 5 4 5-1 5-4"/></svg></div><h3>Digestión</h3><p>Inflamación, pesadez y un abdomen que pide equilibrio.</p></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><circle cx="13" cy="4.5" r="2"/><path d="M8 21l3-6 3 2v4M7 12l3-4 4 2 3 3"/></svg></div><h3>Recuperación física</h3><p>Ideal si haces pilates, entrenas o pasas el día de pie.</p></div>
     </div>
-    <p class="disclaimer">La reflexología es una terapia complementaria: acompaña tu tratamiento médico y suma a tu bienestar. Si tienes un diagnóstico, continúa con las indicaciones de tu médico y cuéntame tu caso al agendar.</p>
+    <p class="disclaimer">El masaje terapéutico y la reflexología son terapias complementarias: acompaña tu tratamiento médico y suma a tu bienestar. Si tienes un diagnóstico, continúa con las indicaciones de tu médico y cuéntame tu caso al agendar.</p>
   </div>
 </section>
 
@@ -245,7 +371,7 @@
     <ol class="timeline">
       <li><span>1</span><h3>Te escucho</h3><p>Dónde duele, desde cuándo y qué lo empeora.</p></li>
       <li><span>2</span><h3>Plan de sesiones</h3><p>Según lo que tu cuerpo necesita y tu ritmo.</p></li>
-      <li><span>3</span><h3>Terapia en tus pies</h3><p>Presión precisa en los puntos relacionados con tu malestar, recostada y en calma.</p></li>
+      <li><span>3</span><h3>Tu sesión</h3><p>Masaje terapéutico, de relajación o reflexología, según lo que tu cuerpo necesita.</p></li>
       <li><span>4</span><h3>Seguimiento</h3><p>Revisamos juntas cómo evolucionas y te llevas recomendaciones para casa.</p></li>
     </ol>
   </div>
@@ -256,8 +382,8 @@
     <img src="foto.jpg" alt="Alexandra Garzón">
     <div>
       <span class="eyebrow">Quién te acompaña</span>
-      <h2>Alexandra Garzón, <em>reflexóloga</em></h2>
-      <p>Te recibo con escucha, presión precisa y un espacio tranquilo para que tu cuerpo suelte lo que viene cargando. Mi trabajo es acompañarte en tu proceso, sesión a sesión.</p>
+      <h2>Alexandra Garzón, <em>masajes y reflexología</em></h2>
+      <p>Te recibo con escucha, manos atentas y un espacio tranquilo para que tu cuerpo suelte lo que viene cargando. Mi trabajo es acompañarte en tu proceso, sesión a sesión.</p>
       <blockquote>“Cuando el dolor se vuelve parte de tu rutina, tu cuerpo merece un espacio para soltarlo.”</blockquote>
     </div>
   </div>
@@ -267,12 +393,14 @@
   <div class="wrap">
     <div class="head center"><span class="eyebrow">Preguntas frecuentes</span><h2>Lo que más <em>me preguntan</em></h2></div>
     <div class="faq">
-      <details><summary>¿Sirve para el dolor crónico?</summary><p>Muchas personas con dolor de espalda, cuello, migraña o fibromialgia sienten alivio con un proceso constante de reflexología. Cada cuerpo responde a su ritmo, por eso trabajamos con un plan de sesiones y revisamos cómo evolucionas.</p></details>
+      <details><summary>¿Qué servicio es para mí?</summary><p>Si tienes un dolor o una zona tensionada, el masaje terapéutico se enfoca ahí, con piedras volcánicas, aromaterapia y sanación reconectiva. Si lo que buscas es descansar y soltar el estrés, el masaje de relajación. La reflexología trabaja el cuerpo desde los pies y acompaña malestares como el insomnio o la digestión. Si tienes dudas, escríbeme y lo definimos juntas.</p></details>
+      <details><summary>¿Sirve para el dolor crónico?</summary><p>Muchas personas con dolor de espalda, cuello, migraña o fibromialgia sienten alivio con un proceso constante de masaje terapéutico o reflexología. Cada cuerpo responde a su ritmo, por eso trabajamos con un plan de sesiones y revisamos cómo evolucionas.</p></details>
       <details><summary>¿Cuántas sesiones necesito?</summary><p>Depende de tu caso. Para dolores que llevan tiempo, lo usual es empezar con sesiones semanales y luego espaciarlas. En la primera sesión te propongo un plan.</p></details>
       <details><summary>¿Duele?</summary><p>La presión se ajusta a ti. Algunos puntos se sienten más sensibles y eso también nos da información. Siempre puedes pedirme más suave.</p></details>
-      <details><summary>¿Cuánto dura y cuánto cuesta?</summary><p>Escríbeme por WhatsApp y te cuento la duración, el valor y los horarios disponibles.</p></details>
-      <details><summary>¿Reemplaza mi tratamiento médico?</summary><p>La reflexología es una terapia complementaria: acompaña tu tratamiento y suma a tu bienestar. Continúa siempre con las indicaciones de tu médico.</p></details>
-      <details><summary>¿Hay algo que deba contarte antes?</summary><p>Sí: si estás en embarazo, tienes lesiones en los pies, problemas de circulación o una condición de salud, cuéntamelo al agendar para preparar tu sesión.</p></details>
+      <details><summary>¿Cuánto cuesta?</summary><p>Masaje terapéutico: $150.000 por sesión.<br>Masaje de relajación: $120.000 por sesión.<br>Reflexología: $100.000 por sesión.<br>Si es a domicilio, el valor del domicilio va aparte. Escríbeme por WhatsApp y te cuento los horarios disponibles.</p></details>
+      <details><summary>¿Dónde atiendes?</summary><p>En mi consultorio en Belén Malibú, Medellín. También voy a domicilio cuando son 2 personas o más; el valor del domicilio va aparte y te lo confirmo según tu ubicación.</p></details>
+      <details><summary>¿Reemplaza mi tratamiento médico?</summary><p>No. Los masajes y la reflexología son terapias complementarias: acompaña tu tratamiento y suma a tu bienestar. Continúa siempre con las indicaciones de tu médico.</p></details>
+      <details><summary>¿Hay algo que deba contarte antes?</summary><p>Sí: si estás en embarazo, tienes alguna lesión, problemas de circulación o una condición de salud, cuéntamelo al agendar para preparar tu sesión.</p></details>
     </div>
   </div>
 </section>
@@ -280,22 +408,21 @@
 <section class="final">
   <div class="wrap">
     <div class="box">
-      <span class="eyebrow">Tu primera sesión</span>
+      <span class="eyebrow">Agenda tu sesión</span>
       <h2 style="margin-top:12px">Tu cuerpo te está <em>pidiendo una pausa</em></h2>
-      <p>Si me conociste en la inauguración de Cygnus, escríbeme y cuéntamelo. </p>
-      <span class="pill">20% de descuento en tu primera sesión</span><br>
-      <a class="btn btn-wa" href="https://wa.me/573001005247?text=Hola%2C%20te%20conoc%C3%AD%20en%20la%20inauguraci%C3%B3n%20de%20Cygnus%20y%20quiero%20agendar%20mi%20primera%20sesi%C3%B3n%20de%20reflexolog%C3%ADa%20con%20el%2020%25%20de%20descuento." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quiero agendar</a>
+      <p>Escríbeme por WhatsApp, cuéntame qué sientes y te ayudo a elegir la terapia para ti.</p>
+      <a class="btn btn-wa" href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quiero agendar</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <p><strong>Naxe Drala</strong> · Reflexología terapéutica · Medellín</p>
-    <p style="margin-top:6px"><a href="https://wa.me/573001005247?text=Hola%2C%20te%20conoc%C3%AD%20en%20la%20inauguraci%C3%B3n%20de%20Cygnus%20y%20quiero%20agendar%20mi%20primera%20sesi%C3%B3n%20de%20reflexolog%C3%ADa%20con%20el%2020%25%20de%20descuento." target="_blank" rel="noopener">WhatsApp +57 300 100 5247</a> · <a href="https://www.instagram.com/reconexionmedellin/" target="_blank" rel="noopener">@reconexionmedellin</a></p>
+    <p><strong>Naxe Drala</strong> · Masajes y reflexología · Medellín</p>
+    <p style="margin-top:6px"><a href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n." target="_blank" rel="noopener">WhatsApp +57 300 100 5247</a> · <a href="https://www.instagram.com/reconexionmedellin/" target="_blank" rel="noopener">@reconexionmedellin</a></p>
   </div>
 </footer>
 
-<a class="float" href="https://wa.me/573001005247?text=Hola%2C%20te%20conoc%C3%AD%20en%20la%20inauguraci%C3%B3n%20de%20Cygnus%20y%20quiero%20agendar%20mi%20primera%20sesi%C3%B3n%20de%20reflexolog%C3%ADa%20con%20el%2020%25%20de%20descuento." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#wa"/></svg></a>
+<a class="float" href="https://wa.me/573001005247?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#wa"/></svg></a>
 </body>
 </html>
